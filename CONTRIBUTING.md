@@ -22,11 +22,16 @@ processo; uma nova aplicação ou integração precisa de escopo próprio.
   cookies, capturas pessoais ou registros reais.
 - Não envie convites a terceiros para testar uma alteração de documentação.
 
-Se tiver Node.js instalado, valide o JSON sem instalar pacotes:
+Se tiver Node.js 18 ou superior, rode a validação automática sem instalar pacotes.
+Ela confere o JSON de exemplo, os campos e valores do CSV e os links relativos
+(arquivos e âncoras) de todos os arquivos Markdown:
 
 ```sh
-node -e "JSON.parse(require('node:fs').readFileSync('examples/perfil.example.json','utf8')); console.log('JSON válido')"
+node scripts/validar.mjs
 ```
+
+A mesma verificação, junto com `git diff --check`, roda no GitHub Actions a cada
+push e pull request ([workflow](.github/workflows/validar.yml)).
 
 Mantenha exemplos em `examples/` e dados de uso real em `local/`, que é ignorada
 pelo Git. Não anexe conversas privadas a issues. Consulte novamente as fontes

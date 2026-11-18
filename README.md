@@ -38,6 +38,7 @@ e as [regras oficiais sobre convites](https://www.linkedin.com/help/linkedin/ans
 | [Rotina de conexões](prompts/02-rotina-de-conexoes.md) | Modelo adaptado da rotina histórica |
 | [Ficha de perfil](examples/perfil.example.json) | Parâmetros fictícios para personalização |
 | [Registro de convites](examples/registro.example.csv) | Exemplo fictício de controle local |
+| [Validação](scripts/validar.mjs) | Checagem automática de links, JSON e CSV |
 | [Contribuição](CONTRIBUTING.md) | Como propor melhorias e validar alterações |
 
 ## Pré-requisitos
@@ -60,8 +61,8 @@ Ao atualizar uma cópia Git, salve suas alterações em commits próprios, confi
 `git status` e só então sincronize com a origem. Revise mudanças nos prompts
 antes de reutilizá-los. Não substitua uma rotina ativa sem conferir o novo texto.
 
-Antes de contribuir, execute `git diff --check`, confira os links internos, abra
-o JSON de exemplo e verifique se o CSV continua legível. Revise todos os arquivos
+Antes de contribuir, execute `git diff --check` e `node scripts/validar.mjs`, que
+confere os links internos, o JSON e o CSV de exemplo. Revise todos os arquivos
 preparados para commit; as regras completas estão em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Compartilhar por WhatsApp

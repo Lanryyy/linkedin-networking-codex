@@ -9,6 +9,19 @@ e as [regras de operação](../docs/operacao.md). Substitua todos os campos entr
 `{{CHAVES}}`. Os números do exemplo são escolhas do titular, não limites seguros
 do LinkedIn. A autorização é específica à conta do usuário que adotar o modelo.
 
+Correspondência entre os campos do prompt e a [ficha de perfil](../examples/perfil.example.json):
+
+| Campo do prompt | Campo da ficha |
+| --- | --- |
+| `{{MEU_PERFIL}}` | `perfil_ou_resumo` |
+| `{{AREA_E_COMPETENCIAS}}` | `area` + `competencias` |
+| `{{LOCALIZACAO_E_PUBLICO}}` | `localizacao` + `publico_alvo` |
+| `{{FUSO}}` | `fuso` |
+| `{{META_RODADA}}` | `meta_rodada` |
+| `{{TETO_DIARIO}}` | `teto_diario` |
+| `{{CAMINHO_OU_REGISTRO_DISPONIVEL}}` | `registro_local` |
+| `{{ANALISE_OU_ENVIO}}` | `modo_inicial` (`analise` ou `envio`) |
+
 ```text
 Realize uma rodada da minha rotina de networking no LinkedIn, conforme a
 autorização e as ferramentas disponíveis nesta conversa.

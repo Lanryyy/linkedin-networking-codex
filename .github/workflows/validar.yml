@@ -1,0 +1,23 @@
+name: Validar documentação
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Espaços em branco
+        run: git diff --check $(git hash-object -t tree /dev/null) HEAD
+      - name: JSON, CSV e links
+        run: node scripts/validar.mjs
