@@ -1,0 +1,22 @@
+# Dados de operação: nunca publicar perfis, convites ou sessões reais.
+/local/
+/private/
+/artifacts/
+/logs/
+/screenshots/
+/.codex/
+/.claude/
+.env
+.env.*
+!.env.example
+*.log
+*.har
+*.pem
+*.key
+*cookies*
+*storage-state*
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+

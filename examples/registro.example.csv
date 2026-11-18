@@ -1,0 +1,4 @@
+data_local,fuso,rodada,nome,url_perfil,estado,evidencia,origem
+2026-01-01,America/Sao_Paulo,exemplo-09h,Pessoa Ficticia A,https://example.invalid/perfis/pessoa-a,confirmado,Exemplo ficticio de estado Pendente,rotina
+2026-01-01,America/Sao_Paulo,exemplo-09h,Pessoa Ficticia B,https://example.invalid/perfis/pessoa-b,incerto,Exemplo ficticio de falha apos possivel envio,rotina
+2026-01-01,America/Sao_Paulo,exemplo-manual,Pessoa Ficticia C,https://example.invalid/perfis/pessoa-c,confirmado,Exemplo ficticio registrado pelo titular,manual

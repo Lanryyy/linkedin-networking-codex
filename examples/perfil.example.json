@@ -1,0 +1,17 @@
+{
+  "exemplo_ficticio": true,
+  "modo_inicial": "analise",
+  "perfil_ou_resumo": "Pessoa Exemplo: profissional de análise de dados e BI",
+  "area": "Dados e Business Intelligence",
+  "competencias": ["Power BI", "SQL", "Excel"],
+  "localizacao": "São Paulo, Brasil",
+  "publico_alvo": [
+    "Recrutadores de tecnologia, dados e BI",
+    "Profissionais seniores que divulgam vagas relevantes"
+  ],
+  "fuso": "America/Sao_Paulo",
+  "meta_rodada": 10,
+  "teto_diario": 20,
+  "observacao_limites": "Valores históricos ilustrativos, sem garantia de segurança do LinkedIn",
+  "registro_local": "local/registro.csv"
+}
